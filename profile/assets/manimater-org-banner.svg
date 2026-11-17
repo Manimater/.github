@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" fill="none" role="img" aria-labelledby="t">
+  <title id="t">Manimater: any concept, one video away</title>
+  <rect width="1200" height="320" rx="28" fill="#000"/>
+  <rect x="0.5" y="0.5" width="1199" height="319" rx="27.5" stroke="#fff" stroke-opacity=".14"/>
+
+  <!-- the Manimater mark, from web/public/logo.svg -->
+  <g transform="translate(96 88) scale(2.25)">
+    <rect width="64" height="64" rx="18" fill="#fff"/>
+    <g stroke="#000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="19" cy="32" r="10"/>
+      <path d="M19 32H29C33.73 21.33 37.27 21.33 42 32C46.73 42.67 50.27 42.67 55 32"/>
+    </g>
+  </g>
+
+  <g font-family="Geist, 'Geist Sans', Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#fff">
+    <text x="276" y="150" font-size="72" font-weight="600" letter-spacing="-3.5">manimater</text>
+    <text x="278" y="200" font-size="30" font-weight="400" fill="#a1a1a1" letter-spacing="-0.4">Any concept. One video away.</text>
+  </g>
+  <g font-family="'Geist Mono', 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" fill="#6b6b6b">
+    <text x="278" y="246">prompt in, narrated explainer out</text>
+  </g>
+
+</svg>

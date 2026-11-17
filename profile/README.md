@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://manimater.vercel.app/">
-    <img src="https://raw.githubusercontent.com/Manimater/.github/main/profile/assets/manimater-banner.svg" alt="Manimater: any concept, one video away" width="100%">
+    <img src="https://raw.githubusercontent.com/Manimater/.github/main/profile/assets/manimater-org-banner.svg" alt="Manimater: any concept, one video away" width="100%">
   </a>
 </p>
 
