@@ -1,58 +1,133 @@
-<!-- Manimater organization profile · lives at Manimater/.github/profile/README.md -->
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/Manimater/.github/main/profile/assets/banner.svg" alt="Manimater" width="100%"/>
-
-<h3>Turn ideas into math &amp; CS animations, powered by <a href="https://github.com/ManimCommunity/manim">Manim</a>.</h3>
-
-<a href="https://github.com/Manimater/manimater-components"><img src="https://img.shields.io/badge/components-open%20source-58c4dd?style=for-the-badge&logo=github&logoColor=white" alt="Components"/></a>
-<a href="https://github.com/ManimCommunity/manim"><img src="https://img.shields.io/badge/built%20on-Manim-ff79c6?style=for-the-badge&logo=python&logoColor=white" alt="Built on Manim"/></a>
-<a href="https://github.com/Manimater"><img src="https://img.shields.io/github/followers/Manimater?label=Followers&style=for-the-badge&color=ffd166&labelColor=0b1020" alt="Followers"/></a>
-
-<br/><br/>
-
-<img src="https://raw.githubusercontent.com/Manimater/.github/main/profile/assets/square-to-circle.gif" alt="A square morphing into a circle" width="400"/>
-&nbsp;&nbsp;
-<img src="https://raw.githubusercontent.com/Manimater/.github/main/profile/assets/sine-wave.gif" alt="A unit circle tracing a sine wave" width="400"/>
-
-</div>
-
----
-
-## ✨ What is Manimater?
-
-**Manimater** makes it easy to create clear, beautiful explanatory animations for math, computer science and AI, without hand-writing every scene from scratch. We build on top of the [Manim](https://github.com/ManimCommunity/manim) animation engine and focus on reusable, tested building blocks that can be driven by structured (JSON) descriptions.
-
-## 📦 Projects
-
-| Project | What it does |
-| :-- | :-- |
-| 🧩 [**manimater-components**](https://github.com/Manimater/manimater-components) | Open-source, tested, reusable Manim animation components (JSON-driven). The component library behind Manimater. |
-
-> More projects are on the way. ⭐ **Star and watch** the repos to follow along.
-
-## 🛠️ Built with
-
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/Manim-0b1020?style=for-the-badge" alt="Manim"/>
-  <img src="https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white" alt="JSON"/>
-  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions"/>
+<p align="center">
+  <a href="https://manimater.vercel.app/">
+    <img src="https://raw.githubusercontent.com/Manimater/.github/main/profile/assets/manimater-banner.svg" alt="Manimater: any concept, one video away" width="100%">
+  </a>
 </p>
 
-## 🤝 Contributing
+<p align="center">
+  <b>Describe a concept. Get a narrated, animated explainer video.</b><br>
+  Manimater plans the scenes, voices them with Kokoro and animates them with <a href="https://www.manim.community/">Manim</a>. The animations come from an open source library of tested components.
+</p>
 
-We love contributions: new components, bug fixes, docs, and example scenes.
+<p align="center">
+  <a href="https://github.com/Manimater/manimater-components/blob/main/LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/library-MIT-000000?style=flat-square&labelColor=000000"></a>
+  <a href="https://github.com/Manimater/manimater-components/blob/main/CONTRIBUTING.md"><img alt="Contributions welcome" src="https://img.shields.io/badge/contributions-welcome-ffffff?style=flat-square&labelColor=000000&color=ffffff"></a>
+</p>
 
-1. 🍴 Fork a repo and create a branch
-2. 🧪 Add or update tests alongside your change
-3. 🔀 Open a pull request and tell us what you animated
-
-Found a bug or have an idea? [Open an issue](https://github.com/Manimater/manimater-components/issues), we'd love to hear it.
+<p align="center">
+  <a href="https://manimater.vercel.app/">Try Manimater</a> ·
+  <a href="https://github.com/Manimater/manimater-components">Component library</a> ·
+  <a href="https://github.com/Manimater/manimater-components/blob/main/docs/WRITING_A_COMPONENT.md">Write a component</a> ·
+  <a href="https://github.com/Manimater/manimater-components/blob/main/catalog.json">Catalog</a> ·
+  <a href="https://github.com/Manimater/manimater-components/issues/new/choose">Request a component</a>
+</p>
 
 ---
 
-<div align="center">
-  <sub>Made with 💙 and a lot of <code>self.play()</code></sub>
-</div>
+## What it does
+
+Type a topic such as "phase lag in a series RL circuit" and Manimater returns an MP4 in about a minute: a script that opens on a hook, a voice that speaks every on-screen step, and animation timed to that voice. You see the plan before anything is rendered, and planning is free.
+
+The part that makes it dependable is what the AI is allowed to do. It never writes code. It chooses components from a library and fills in their parameters as JSON. The renderer checks every value against the library's catalog before anything runs, so a bad plan is rejected instead of executed.
+
+<table>
+  <tr>
+    <td width="33%" align="center"><img src="https://raw.githubusercontent.com/Manimater/.github/main/profile/assets/synchronous_motor.gif" alt="Synchronous motor component" width="100%"><br><sub><code>synchronous_motor</code><br>electrical</sub></td>
+    <td width="33%" align="center"><img src="https://raw.githubusercontent.com/Manimater/.github/main/profile/assets/cpu_pipeline.gif" alt="CPU pipeline component" width="100%"><br><sub><code>cpu_pipeline</code><br>microelectronics</sub></td>
+    <td width="33%" align="center"><img src="https://raw.githubusercontent.com/Manimater/.github/main/profile/assets/neural_network.gif" alt="Neural network component" width="100%"><br><sub><code>neural_network</code><br>machine learning</sub></td>
+  </tr>
+  <tr>
+    <td width="33%" align="center"><img src="https://raw.githubusercontent.com/Manimater/.github/main/profile/assets/pid_response.gif" alt="PID response component" width="100%"><br><sub><code>pid_response</code><br>control systems</sub></td>
+    <td width="33%" align="center"><img src="https://raw.githubusercontent.com/Manimater/.github/main/profile/assets/binary_search_tree.gif" alt="Binary search tree component" width="100%"><br><sub><code>binary_search_tree</code><br>computer science</sub></td>
+    <td width="33%" align="center"><img src="https://raw.githubusercontent.com/Manimater/.github/main/profile/assets/order_book_matching.gif" alt="Order book matching component" width="100%"><br><sub><code>order_book_matching</code><br>finance</sub></td>
+  </tr>
+</table>
+
+<p align="center"><sub>Six of the components, rendered from their own example parameters.</sub></p>
+
+## How a video is made
+
+```
+ prompt
+    │
+    ▼
+ Planner        Gemma 4 26B A4B on Cloudflare Workers AI
+    │           returns a storyboard: [ { component, params, narration } ]
+    ▼
+ Validator      checks every component and parameter against the catalog
+    │
+    ▼
+ Renderer       Kokoro voices each scene, Manim animates it, ffmpeg joins it
+    │
+    ▼
+ MP4
+```
+
+1. **Describe and confirm.** One sentence is enough. The studio asks whether it understood you, and you pick the length and the voice.
+2. **Plan.** The planner works out the core idea, an analogy and a worked example, then picks components and writes the narration. Its reasoning streams to the studio while it works.
+3. **Narrate and animate.** Each scene is voiced first, and Manim gives the scene exactly as many seconds as the audio runs, so the picture follows the script.
+4. **Watch and download.** You get an MP4 that ends with a short "Created using manimater" card.
+
+A browser extension adds a "Manimater it" action to the right-click menu, so you can turn selected text on any page into a video. It works in Chrome, Edge and Brave.
+
+## The component library
+
+[`manimater-components`](https://github.com/Manimater/manimater-components) is the open source library behind every video, released under the MIT licence. A component is a name plus parameters:
+
+```jsonc
+// No animation code. The renderer validates this against the catalog.
+{ "component": "synchronous_motor", "params": { "poles": 2, "frequency_hz": 50 } }
+```
+
+| Subject | Components | Subject | Components |
+|---|---:|---|---:|
+| General | 14 | Control systems | 7 |
+| Computer science | 14 | Microelectronics | 7 |
+| Finance | 13 | Machine learning | 6 |
+| Electrical | 9 | Physics | 6 |
+| Power systems | 6 | Study content | 4 |
+| Chemistry | 3 | Databases | 2 |
+
+That is 91 components in the current catalog, 27 of which wrap community Manim plugins that are credited in [`THIRD_PARTY.md`](https://github.com/Manimater/manimater-components/blob/main/docs/THIRD_PARTY.md). Every component carries an example that must render, and CI dry-runs all of them against a real Manim scene.
+
+The library also ships a [Claude skill](https://github.com/Manimater/manimater-components/tree/main/skills/manimater-components) that teaches Claude to pick components, write valid storyboards and author new components that follow the rules.
+
+## The stack
+
+| Stage | Model | What it does | Runs on |
+|---|---|---|---|
+| Planner | Gemma 4 26B A4B | Plans the scenes, fills in their parameters and writes the spoken script | Cloudflare Workers AI |
+| Voice | Kokoro TTS | Narrates every scene, and scene length follows the audio | Inside the renderer |
+| Animation | Manim | Draws each scene from a validated component | Inside the renderer |
+
+Because the planner only emits a few hundred tokens of JSON, a small model is enough and planning a video costs a fraction of a cent.
+
+## Contribute
+
+New components are the best way to help, and you do not have to write code.
+
+- **Developers.** Copy [`_template.py`](https://github.com/Manimater/manimater-components/blob/main/manimate/components/community/_template.py) into `manimate/components/community/`, then follow [CONTRIBUTING.md](https://github.com/Manimater/manimater-components/blob/main/CONTRIBUTING.md) and [Writing a component](https://github.com/Manimater/manimater-components/blob/main/docs/WRITING_A_COMPONENT.md).
+- **Everyone else.** Describe the animation you want to any LLM, paste the result into a form, and we turn it into a pull request. Start with [Generate with an LLM](https://github.com/Manimater/manimater-components/blob/main/docs/GENERATE_WITH_AN_LLM.md).
+
+Every component follows the same design rules:
+
+1. One idea per component, with a description a planner can match to a topic.
+2. Computed, not drawn. Algorithms, formulas and layouts are plain functions that can be tested without Manim.
+3. The finished picture fades in as a whole in 1.2 to 1.5 seconds, then the parts that carry the meaning animate.
+4. Fill the time the scene is given and do not run over it.
+5. Forgiving parameters. Clamp and trim instead of crashing on empty lists, huge numbers or long labels.
+6. Plain labels, under 28 characters where possible.
+7. Pure drawing code. No network, files, subprocesses, `eval` or `exec`.
+
+```bash
+git clone https://github.com/Manimater/manimater-components && cd manimater-components
+pip install -e ".[dev]"
+python -m manimate.preview --list     # every component
+```
+
+---
+
+<p align="center">
+  <a href="https://manimater.vercel.app/"><img src="https://raw.githubusercontent.com/Manimater/.github/main/profile/assets/logo.svg" alt="Manimater" width="40"></a><br>
+  <sub>The hosted studio is a proprietary product. The component library is open source under the MIT licence.</sub>
+</p>
