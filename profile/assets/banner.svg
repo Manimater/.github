@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 360" width="1280" height="360" role="img" aria-label="Manimater banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#1b1140"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#58c4dd"/>
+      <stop offset="0.5" stop-color="#83c167"/>
+      <stop offset="1" stop-color="#ffd166"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#58c4dd"/>
+      <stop offset="1" stop-color="#ff79c6"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+    <style>
+      .draw { stroke-dasharray: 2400; stroke-dashoffset: 2400; animation: draw 5s ease-in-out infinite; }
+      .draw2 { stroke-dasharray: 2400; stroke-dashoffset: 2400; animation: draw 5s ease-in-out 0.6s infinite; }
+      @keyframes draw { 0% {stroke-dashoffset: 2400;} 55% {stroke-dashoffset: 0;} 90% {stroke-dashoffset: 0; opacity: 1;} 100% {stroke-dashoffset: 0; opacity: 0;} }
+      .float { animation: float 6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .spin { animation: spin 14s linear infinite; transform-box: fill-box; transform-origin: center; }
+      @keyframes float { 0%,100% {transform: translateY(0);} 50% {transform: translateY(-10px);} }
+      @keyframes spin { to {transform: rotate(360deg);} }
+      .fadein { animation: fadein 1.6s ease-out both; }
+      @keyframes fadein { from {opacity: 0; transform: translateY(12px);} to {opacity: 1; transform: none;} }
+    </style>
+  </defs>
+  <rect width="1280" height="360" fill="url(#bg)"/>
+  <rect width="1280" height="360" fill="url(#grid)"/>
+  <!-- axes -->
+  <line x1="0" y1="180" x2="1280" y2="180" stroke="#ffffff" stroke-opacity="0.12"/>
+  <line x1="640" y1="0" x2="640" y2="360" stroke="#ffffff" stroke-opacity="0.08"/>
+  <!-- waves -->
+  <path class="draw" fill="none" stroke="url(#wave)" stroke-width="4" stroke-linecap="round"
+        d="M0 180 C 80 80, 160 80, 240 180 S 400 280, 480 180 S 640 80, 720 180 S 880 280, 960 180 S 1120 80, 1200 180 S 1260 240, 1280 200"/>
+  <path class="draw2" fill="none" stroke="#ff79c6" stroke-opacity="0.55" stroke-width="2.5" stroke-linecap="round"
+        d="M0 180 C 60 130, 120 130, 180 180 S 300 230, 360 180 S 480 130, 540 180 S 660 230, 720 180 S 840 130, 900 180 S 1020 230, 1080 180 S 1200 130, 1280 180"/>
+  <!-- shapes -->
+  <g class="float"><rect x="90" y="60" width="64" height="64" rx="4" fill="none" stroke="#58c4dd" stroke-width="4"/></g>
+  <g class="float" style="animation-delay:-2s"><circle cx="1130" cy="90" r="34" fill="#ff79c6" fill-opacity="0.25" stroke="#ff79c6" stroke-width="4"/></g>
+  <g class="spin"><polygon points="1070,280 1110,320 1030,320" fill="none" stroke="#ffd166" stroke-width="4" stroke-linejoin="round"/></g>
+  <g class="float" style="animation-delay:-4s"><circle cx="170" cy="280" r="9" fill="#83c167"/></g>
+  <!-- title -->
+  <g class="fadein">
+    <text x="640" y="178" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="96" font-weight="800" letter-spacing="2" fill="url(#title)">Manimater</text>
+    <text x="640" y="232" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" fill="#c9d1d9">Math &amp; code, brought to life with Manim</text>
+  </g>
+</svg>
