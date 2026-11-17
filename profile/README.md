@@ -45,31 +45,6 @@ The part that makes it dependable is what the AI is allowed to do. It never writ
 
 <p align="center"><sub>Six of the components, rendered from their own example parameters.</sub></p>
 
-## How a video is made
-
-```
- prompt
-    │
-    ▼
- Planner        Gemma 4 26B A4B on Cloudflare Workers AI
-    │           returns a storyboard: [ { component, params, narration } ]
-    ▼
- Validator      checks every component and parameter against the catalog
-    │
-    ▼
- Renderer       Kokoro voices each scene, Manim animates it, ffmpeg joins it
-    │
-    ▼
- MP4
-```
-
-1. **Describe and confirm.** One sentence is enough. The studio asks whether it understood you, and you pick the length and the voice.
-2. **Plan.** The planner works out the core idea, an analogy and a worked example, then picks components and writes the narration. Its reasoning streams to the studio while it works.
-3. **Narrate and animate.** Each scene is voiced first, and Manim gives the scene exactly as many seconds as the audio runs, so the picture follows the script.
-4. **Watch and download.** You get an MP4 that ends with a short "Created using manimater" card.
-
-A browser extension adds a "Manimater it" action to the right-click menu, so you can turn selected text on any page into a video. It works in Chrome, Edge and Brave.
-
 ## The component library
 
 [`manimater-components`](https://github.com/Manimater/manimater-components) is the open source library behind every video, released under the MIT licence. A component is a name plus parameters:
@@ -91,16 +66,6 @@ A browser extension adds a "Manimater it" action to the right-click menu, so you
 That is 91 components in the current catalog, 27 of which wrap community Manim plugins that are credited in [`THIRD_PARTY.md`](https://github.com/Manimater/manimater-components/blob/main/docs/THIRD_PARTY.md). Every component carries an example that must render, and CI dry-runs all of them against a real Manim scene.
 
 The library also ships a [Claude skill](https://github.com/Manimater/manimater-components/tree/main/skills/manimater-components) that teaches Claude to pick components, write valid storyboards and author new components that follow the rules.
-
-## The stack
-
-| Stage | Model | What it does | Runs on |
-|---|---|---|---|
-| Planner | Gemma 4 26B A4B | Plans the scenes, fills in their parameters and writes the spoken script | Cloudflare Workers AI |
-| Voice | Kokoro TTS | Narrates every scene, and scene length follows the audio | Inside the renderer |
-| Animation | Manim | Draws each scene from a validated component | Inside the renderer |
-
-Because the planner only emits a few hundred tokens of JSON, a small model is enough and planning a video costs a fraction of a cent.
 
 ## Contribute
 
